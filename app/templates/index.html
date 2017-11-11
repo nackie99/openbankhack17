@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Oracle FitBank</title>
- 
- 
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
- 
-    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
- 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
 </head>
  
@@ -16,21 +13,20 @@
  
     <div class="container">
         <div class="header">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a>
-                    </li>
-                    <li role="presentation"><a href="#">Sign In</a>
-                    </li>
-                    <li role="presentation"><a href="createEndUser">Sign Up</a>
-                    </li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Oracle FitBank</h3>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand text-muted" href="#">Oracle FitBank</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="createEndUser"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav> 
         </div>
  
         <div class="jumbotron">
-        <h1 class="col-lg-6">Enter login details </h1>
 		<div class="col-lg-6">
 			<form class="form-login">
 			<label for="inputName" class="sr-only">Email Address</label>
@@ -39,13 +35,13 @@
 			<input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="" required autofocus>
 
 			<button id="btnLogin" class="btn btn-lg btn-primary btn-block" type="button">Login</button>
+			</form>
 		</div>
-
-		<p><h2>Not a user yet?</h2></p>
+		<div class="col-lg-6"><h2>Not a user yet?</h2></div>
 			<a class="btn btn-lg btn-success" href="createEndUser" role="button">Sign Up</a>
             </p>
         </div>
-  
+
         <footer class="footer">
             <p>&copy; Oracle 2017</p>
         </footer>
