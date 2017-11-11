@@ -19,11 +19,22 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Dashboard</a></li>
-      <li><a href="#">Transactions</a></li>
-      <li><a href="#">Goals</a></li>
+      <li><a href="transactions">Transactions</a></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Goals <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+          <li><a href="#">View Goals</a></li>
+          <li><a href="#">Modify Goals</a></li>
+        </ul>
+      </li>
+	  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Payments <span class="caret"></span></a>
+	    <ul class="dropdown-menu">
+          <li><a href="#">Make Payments</a></li>
+          <li><a href="#">Modify Payees</a></li>
+        </ul>
+	  </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="createEndUser"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>

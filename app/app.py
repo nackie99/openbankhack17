@@ -13,11 +13,17 @@ app.config['MYSQL_DATABASE_DB'] = 'BucketList'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
-
-
 @app.route("/")
 def main():
     return render_template('index.html')
+
+@app.route('/loadMain')
+def loadMain():
+
+    _email = request.form['inputName']
+    _password = request.form['inputAddress']
+    
+    return render_template('main.html')
 
 @app.route('/createEndUser')
 def showSignUp():
