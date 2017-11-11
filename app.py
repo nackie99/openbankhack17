@@ -41,6 +41,7 @@ def loadMain():
 def showSignUp():
     return render_template('signup.html')
 
+@app.route('/signUp', methods=['POST','GET'])
 def signUp():
     print('hello world')
 
@@ -75,6 +76,10 @@ def signUp():
     #   else:
     #      return json.dumps({'html': '<span>Enter the required fields</span>'})
     return render_template('main.html')
+
+@app.route('/test', methods=['POST','GET'])
+def test():
+    print('this is a test')
 
 if __name__ == "__main__":
     app.run()
