@@ -30,11 +30,18 @@
         </div>
  
         <div class="jumbotron">
-            <h1>Ora FitBank</h1>
-            <p class="lead"></p>
-            <p><a class="btn btn-lg btn-success" href="login" role="button">Log in</a>
-            </p>
-            <h2>Not a user yet?</h2>
+        <h1 class="col-lg-6">Enter login details </h1>
+		<div class="col-lg-6">
+			<form class="form-login">
+			<label for="inputName" class="sr-only">Email Address</label>
+			<input type="name" name="inputName" id="inputName" class="form-control" placeholder="Email address" required autofocus>
+			<label for="inputPassword" class="sr-only">Password</label>
+			<input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="" required autofocus>
+
+			<button id="btnLogin" class="btn btn-lg btn-primary btn-block" type="button">Login</button>
+		</div>
+
+		<p><h2>Not a user yet?</h2></p>
 			<a class="btn btn-lg btn-success" href="createEndUser" role="button">Sign Up</a>
             </p>
         </div>
